@@ -52,9 +52,9 @@
 <img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/Twitter.png" width="250">
 
 7. Firebase Authentication
-<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/Firebase.png" width="400">
+<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/Firebase.png" width="500">
 
 8. Project Architecture Diagram
-<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/CMPE-277Architecture.png" width="400">
+<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/CMPE-277Architecture.png" width="500">
 
 
