@@ -26,6 +26,9 @@
 7. Firebase Authentication
 <img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/Firebase.png" width="600">
 
+8. Project Architecture Diagram
+<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/CMPE-277Architecture.png" width="400">
+
 ## Project Functionalities
 1. Sign Up using firebase
 2. Sign in using firebase
