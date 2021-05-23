@@ -3,7 +3,7 @@
 ## University Name: San Jose State University
 ## Professor : Kaikai Liu
 ## ISA : Hari Haran Kura
-## Demo:
+## Demo: https://www.youtube.com/watch?v=zjpKopDd6pU
 ## Project Screenshots:
 1. SignIn Page
 <img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/SignIn.png" width="400">
