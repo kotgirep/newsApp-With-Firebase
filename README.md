@@ -4,30 +4,6 @@
 ## Professor : Kaikai Liu
 ## ISA : Hari Haran Kura
 ## Demo: https://www.youtube.com/watch?v=zjpKopDd6pU
-## Project Screenshots:
-1. SignIn Page
-<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/SignIn.png" width="400">
-
-2. Sign Up Page
-<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/SignUp.png" width="400">
-
-3. Splash Screen
-<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/SplashScreen.png" width="400">
-
-4. Landing Page
-<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/Landing-page.png" width="400">
-
-5. Detailed News Page
-<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/DetailPage.png" width="400">
-
-6. Sharing News On Twitter
-<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/Twitter.png" width="400">
-
-7. Firebase Authentication
-<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/Firebase.png" width="600">
-
-8. Project Architecture Diagram
-<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/CMPE-277Architecture.png" width="600">
 
 ## Project Functionalities
 1. Sign Up using firebase
@@ -55,4 +31,30 @@
 4. Recyclerview
 5. Cardview
 6. Firebase-core
+
+## Project Screenshots:
+1. SignIn Page
+<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/SignIn.png" width="400">
+
+2. Sign Up Page
+<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/SignUp.png" width="400">
+
+3. Splash Screen
+<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/SplashScreen.png" width="400">
+
+4. Landing Page
+<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/Landing-page.png" width="400">
+
+5. Detailed News Page
+<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/DetailPage.png" width="400">
+
+6. Sharing News On Twitter
+<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/Twitter.png" width="400">
+
+7. Firebase Authentication
+<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/Firebase.png" width="600">
+
+8. Project Architecture Diagram
+<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/CMPE-277Architecture.png" width="600">
+
 
