@@ -57,4 +57,10 @@
 8. Project Architecture Diagram
 <img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/CMPE-277Architecture.png" width="500">
 
+## Refrences
+1. https://stackoverflow.com/questions/27015895/how-to-link-two-xml-pages-in-android-app-when-a-button-is-clicked
+2. https://www.codegrepper.com/code-examples/java/link+to+new+page+in+android+studio (How to link pages tutorial)
+3. https://www.c-sharpcorner.com/article/how-to-be-working-with-multiple-activities-and-navigate-the-activities-in-androi/ (creating multiple activities and navigation between them)
+4. https://medium.com/android-news/right-way-to-create-splash-screen-on-android-e7f1709ba154 (creating splash screen in android)
+
 
