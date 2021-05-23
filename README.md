@@ -38,5 +38,21 @@
 6. User can share news on multiple platforms such Twitter, Gmail, Facebook etc.
 7. For each news there is detail view where user can view news along with brief information, video and images associated with it.
 
-## Project Architecture
+## Project Description
+1. For bulletin cluster news app I am using firebase for user authentication, where user can sign up and sign in using firebase.
+2. Splash screen will be displayed once you will be able to sign in.
+3. Then you will be headed towards landing page of application where you can see all the latest news from diffrent news resources.
+4. On landing page i have added search functionality where user can search news by keyword.
+5. I am using android-ago dependancy which shows when the particular article has posted.
+6. For showing news in a similar uniform container i am using cardview and to show those in recycer view I have added recycler view library.
+7. Once you select particular news to read you will br redirected to a detail news page where you can view news along with description,video and images.
+8. And if you want to share news on particular platform you can do it from detail views page just by clicking on particular news platform such as twitter,facebook,gmail,whatsapp etc.
+
+## Libraries used
+1. Retrofit
+2. Android ago
+3. Picasso
+4. Recyclerview
+5. Cardview
+6. Firebase-core
 
