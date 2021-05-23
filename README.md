@@ -43,18 +43,21 @@
 <img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/SplashScreen.png" width="250">
 
 4. Landing Page
-<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/Landing-page.png" width="250">
+<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/HomePage.png" width="250">
 
-5. Detailed News Page
+5. With Search Functionality by typing a keyword as covid
+<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/HomePage.png" width="250">
+
+6. Detailed News Page
 <img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/DetailPage.png" width="250">
 
-6. Sharing News On Twitter
+7. Sharing News On Twitter
 <img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/Twitter.png" width="250">
 
-7. Firebase Authentication
+8. Firebase Authentication
 <img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/Firebase.png" width="500">
 
-8. Project Architecture Diagram
+9. Project Architecture Diagram
 <img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/CMPE-277Architecture.png" width="500">
 
 ## Refrences
