@@ -48,26 +48,34 @@
 1. SignIn Page
 <img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/SignIn.png" width="250">
 
+
 2. Sign Up Page
 <img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/SignUp.png" width="250">
+
 
 3. Splash Screen
 <img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/SplashScreen.png" width="250">
 
+
 4. Landing Page
 <img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/HomePage.png" width="250">
+
 
 5. With Search Functionality by typing a keyword as covid
 <img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/Search.png" width="250">
 
+
 6. Detailed News Page
 <img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/DetailPage.png" width="250">
+
 
 7. Sharing News On Twitter
 <img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/Twitter.png" width="250">
 
+
 8. Firebase Authentication
 <img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/Firebase.png" width="500">
+
 
 9. Project Architecture Diagram
 <img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/CMPE-277Architecture.png" width="500">
