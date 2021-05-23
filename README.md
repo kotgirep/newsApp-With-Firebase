@@ -24,6 +24,18 @@
 7. Once you select particular news to read you will br redirected to a detail news page where you can view news along with description,video and images.
 8. And if you want to share news on particular platform you can do it from detail views page just by clicking on particular news platform such as twitter,facebook,gmail,whatsapp etc.
 
+## Step-by-step Description
+1.	Firstly, I have created a sign in and signup pages for users which will be used for users to login to the application.
+2.	For signup and sign in I am using firebase authentication whereas user’s data will be stored in firebase.
+3.	After sign in user will see a splash screen which shows application name and I have set timeout for splash screen as 5 seconds.
+4.	After 5 seconds you will be redirect to a home page which has news from multiple news resources such as google news, ABC News, CNN News, CNBC news etc. on the same page I have added a search bar where user can type a keyword and search news by keywords.
+5.	all the news on home page, I am fetching from newsapi.org site.
+6.	on home page I am fetching news from all resources in a card view because I wanted to have it in a uniform size container and added Recycler view that provides ability to implement the horizontal, vertical and expandable list. On the same page user can see time when the news has uploaded like 5 minutes ago, 10 minutes ago etc.
+7.	Once you click on any news from home page you will redirect to its detail view page where you can see a news in details along with images, videos, description associated with it.
+8.	In detail view, under each news you can see a feature where user can share news on multiple platforms such as Twitter, WhatsApp, Gmail, Facebook etc. by simply clicking on platform icon where you want to share the news.
+
+
+
 ## Libraries used
 1. Retrofit
 2. Android ago
