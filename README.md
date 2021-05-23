@@ -24,4 +24,4 @@
 <img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/Twitter.png" width="400">
 
 7. Firebase Authentication
-<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/Firebase.png" width="400">
+<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/Firebase.png" width="600">
