@@ -5,22 +5,22 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
     private static final String BASE_URL = "https://newsapi.org/v2/";
-    private static ApiClient apiClient;
-    private static Retrofit retrofit;
+    private static ApiClient api_clnt;
+    private static Retrofit api_retro;
 
     private ApiClient(){
-        retrofit = new Retrofit.Builder().baseUrl(BASE_URL).addConverterFactory(GsonConverterFactory.create()).build();
+        api_retro = new Retrofit.Builder().baseUrl(BASE_URL).addConverterFactory(GsonConverterFactory.create()).build();
     }
 
     public static synchronized ApiClient getInstance(){
-        if (apiClient == null){
-            apiClient = new ApiClient();
+        if (api_clnt == null){
+            api_clnt = new ApiClient();
         }
-        return apiClient;
+        return api_clnt;
     }
 
 
     public ApiInterface getApi(){
-        return retrofit.create(ApiInterface.class);
+        return api_retro.create(ApiInterface.class);
     }
 }

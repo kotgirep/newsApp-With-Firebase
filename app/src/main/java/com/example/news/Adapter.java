@@ -27,32 +27,32 @@ import java.util.Locale;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
-    Context context;
-    List<Articles> articles;
+    Context artcontxt;
+    List<Articles> artlist;
 
 
     public Adapter(Context context, List<Articles> articles) {
-        this.context = context;
-        this.articles = articles;
+        this.artcontxt = context;
+        this.artlist = articles;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.items,parent,false);
-        return new ViewHolder(view);
+        View pub_view = LayoutInflater.from(parent.getContext()).inflate(R.layout.items,parent,false);
+        return new ViewHolder(pub_view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
 
 
-        final Articles a = articles.get(position);
+        final Articles a = artlist.get(position);
 
-        String imageUrl = a.getUrlToImage();
-        String url = a.getUrl();
+        String img_uri = a.getUrlToImage();
+        String url_art = a.getUrl();
 
-        Picasso.with(context).load(imageUrl).into(holder.imageView);
+        Picasso.with(artcontxt).load(img_uri).into(holder.imageView);
 
         holder.tvTitle.setText(a.getTitle());
         holder.tvSource.setText(a.getSource().getName());
@@ -61,14 +61,14 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context,Detailed.class);
+                Intent intent = new Intent(artcontxt,Detailed.class);
                 intent.putExtra("title",a.getTitle());
                 intent.putExtra("source",a.getSource().getName());
                 intent.putExtra("time",dateTime(a.getPublishedAt()));
                 intent.putExtra("desc",a.getDescription());
                 intent.putExtra("imageUrl",a.getUrlToImage());
                 intent.putExtra("url",a.getUrl());
-                context.startActivity(intent);
+                artcontxt.startActivity(intent);
             }
         });
 
@@ -76,7 +76,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     @Override
     public int getItemCount() {
-        return articles.size();
+        return artlist.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
@@ -99,15 +99,15 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     public String dateTime(String t){
         PrettyTime prettyTime = new PrettyTime(new Locale(getCountry()));
-        String time = null;
+        String article_time = null;
         try {
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:",Locale.ENGLISH);
-            Date date = simpleDateFormat.parse(t);
-            time = prettyTime.format(date);
+            Date art_date = simpleDateFormat.parse(t);
+            article_time = prettyTime.format(art_date);
         }catch (ParseException e) {
             e.printStackTrace();
         }
-        return time;
+        return article_time;
 
     }
 

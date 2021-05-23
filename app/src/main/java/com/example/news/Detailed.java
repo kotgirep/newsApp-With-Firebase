@@ -14,10 +14,10 @@ import android.widget.TextView;
 import com.squareup.picasso.Picasso;
 public class Detailed extends AppCompatActivity {
 
-    TextView tvTitle,tvSource,tvTime,tvDesc;
-    ImageView imageView;
-    WebView webView;
-    ProgressBar loader;
+    TextView tytl,source1,tvTime,destv;
+    ImageView imgvw;
+    WebView webv;
+    ProgressBar ploader;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,42 +26,43 @@ public class Detailed extends AppCompatActivity {
 //        getSupportActionBar().setTitle("Bulletin Details");
 //     getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        tvTitle = findViewById(R.id.tvTitle);
-        tvSource = findViewById(R.id.tvSource);
+
         tvTime = findViewById(R.id.tvDate);
-        tvDesc = findViewById(R.id.tvDesc);
+        destv = findViewById(R.id.tvDesc);
+        tytl = findViewById(R.id.tvTitle);
+        source1 = findViewById(R.id.tvSource);
 
-        imageView = findViewById(R.id.imageView);
+        imgvw = findViewById(R.id.imageView);
 
-        webView = findViewById(R.id.webView);
+        webv = findViewById(R.id.webView);
 
-        loader = findViewById(R.id.webViewLoader);
-        loader.setVisibility(View.VISIBLE);
+        ploader = findViewById(R.id.webViewLoader);
+        ploader.setVisibility(View.VISIBLE);
 
         Intent intent = getIntent();
-        String title = intent.getStringExtra("title");
-        String source = intent.getStringExtra("source");
-        String time = intent.getStringExtra("time");
-        String desc = intent.getStringExtra("desc");
-        String imageUrl = intent.getStringExtra("imageUrl");
+        String titleart = intent.getStringExtra("title");
+        String sourceart = intent.getStringExtra("source");
+        String arttym = intent.getStringExtra("time");
+        String dysart = intent.getStringExtra("desc");
+        String imgurl = intent.getStringExtra("imageUrl");
         String url = intent.getStringExtra("url");
 
 
-        tvTitle.setText(title);
-        tvSource.setText(source);
-        tvTime.setText(time);
-        tvDesc.setText(desc);
+        tytl.setText(titleart);
+        source1.setText(sourceart);
+        tvTime.setText(arttym);
+        destv.setText(dysart);
 
-        Picasso.with(Detailed.this).load(imageUrl).into(imageView);
+        Picasso.with(Detailed.this).load(imgurl).into(imgvw);
 
-        webView.getSettings().setDomStorageEnabled(true);
-        webView.getSettings().setJavaScriptEnabled(true);
-        webView.getSettings().setLoadsImagesAutomatically(true);
-        webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-        webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl(url);
-        if (webView.isShown()){
-            loader.setVisibility(View.INVISIBLE);
+        webv.getSettings().setDomStorageEnabled(true);
+        webv.getSettings().setJavaScriptEnabled(true);
+        webv.getSettings().setLoadsImagesAutomatically(true);
+        webv.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
+        webv.setWebViewClient(new WebViewClient());
+        webv.loadUrl(url);
+        if (webv.isShown()){
+            ploader.setVisibility(View.INVISIBLE);
         }
     }
 }

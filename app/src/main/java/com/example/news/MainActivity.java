@@ -29,102 +29,100 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
 
-    RecyclerView recyclerView;
-    SwipeRefreshLayout swipeRefreshLayout;
-    EditText etQuery;
-    Button btnSearch,btnAboutUs;
-    Dialog dialog;
+
+
+    EditText etxt;
+    Button Search,btnAbt;
+    Dialog dg;
+    RecyclerView recyView;
+    SwipeRefreshLayout swipebttn;
+
     final String API_KEY = "4185a0e9318a449e91e4283fc86681ff";
-    Adapter adapter;
+    Adapter adptr;
     List<Articles>  articles = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        swipeRefreshLayout = findViewById(R.id.swipeRefresh);
-        recyclerView = findViewById(R.id.recyclerView);
-
-        etQuery = findViewById(R.id.etQuery);
-        btnSearch = findViewById(R.id.btnSearch);
-        btnAboutUs = findViewById(R.id.aboutUs);
-        dialog = new Dialog(MainActivity.this);
-
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        final String country = getCountry();
+        dg = new Dialog(MainActivity.this);
+        swipebttn = findViewById(R.id.swipeRefresh);
+        recyView = findViewById(R.id.recyclerView);
+        etxt = findViewById(R.id.etQuery);
+        Search = findViewById(R.id.btnSearch);
+        btnAbt = findViewById(R.id.aboutUs);
 
 
-        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+        recyView.setLayoutManager(new LinearLayoutManager(this));
+        final String News_cntry = getCountry();
+
+
+        swipebttn.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                retrieveJson("",country,API_KEY);
+                retrieveJson("",News_cntry,API_KEY);
             }
         });
-        retrieveJson("",country,API_KEY);
+        retrieveJson("",News_cntry,API_KEY);
 
-        btnSearch.setOnClickListener(new View.OnClickListener() {
+        Search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!etQuery.getText().toString().equals("")){
-                    swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+                if (!etxt.getText().toString().equals("")){
+                    swipebttn.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
                         @Override
                         public void onRefresh() {
-                            retrieveJson(etQuery.getText().toString(),country,API_KEY);
+                            retrieveJson(etxt.getText().toString(),News_cntry,API_KEY);
                         }
                     });
-                    retrieveJson(etQuery.getText().toString(),country,API_KEY);
+                    retrieveJson(etxt.getText().toString(),News_cntry,API_KEY);
                 }else{
-                    swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+                    swipebttn.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
                         @Override
                         public void onRefresh() {
-                            retrieveJson("",country,API_KEY);
+                            retrieveJson("",News_cntry,API_KEY);
                         }
                     });
-                    retrieveJson("",country,API_KEY);
+                    retrieveJson("",News_cntry,API_KEY);
                 }
             }
         });
 
-        btnAboutUs.setOnClickListener(new View.OnClickListener() {
+        btnAbt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showDialog();
             }
         });
 
-
-
-
-
-
     }
 
     public void retrieveJson(String query ,String country, String apiKey){
 
 
-        swipeRefreshLayout.setRefreshing(true);
-        Call<Headlines> call;
-        if (!etQuery.getText().toString().equals("")){
-            call= ApiClient.getInstance().getApi().getSpecificData(query,apiKey);
+        swipebttn.setRefreshing(true);
+        Call<Headlines> news_call;
+        if (!etxt.getText().toString().equals("")){
+            news_call= ApiClient.getInstance().getApi().getSpecificData(query,apiKey);
         }else{
-            call= ApiClient.getInstance().getApi().getHeadlines(country,apiKey);
+            news_call= ApiClient.getInstance().getApi().getHeadlines(country,apiKey);
         }
 
-        call.enqueue(new Callback<Headlines>() {
+        news_call.enqueue(new Callback<Headlines>() {
             @Override
-            public void onResponse(Call<Headlines> call, Response<Headlines> response) {
+            public void onResponse(Call<Headlines> news_call, Response<Headlines> response) {
                 if (response.isSuccessful() && response.body().getArticles() != null){
-                    swipeRefreshLayout.setRefreshing(false);
+                    swipebttn.setRefreshing(false);
                     articles.clear();
                     articles = response.body().getArticles();
-                    adapter = new Adapter(MainActivity.this,articles);
-                    recyclerView.setAdapter(adapter);
+                    adptr = new Adapter(MainActivity.this,articles);
+                    recyView.setAdapter(adptr);
                 }
             }
 
             @Override
-            public void onFailure(Call<Headlines> call, Throwable t) {
-                swipeRefreshLayout.setRefreshing(false);
+            public void onFailure(Call<Headlines> news_call, Throwable t) {
+                swipebttn.setRefreshing(false);
                 Toast.makeText(MainActivity.this, t.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
             }
         });
@@ -137,15 +135,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showDialog(){
-        Button btnClose;
-        dialog.setContentView(R.layout.about_us_pop_up);
-        dialog.show();
-        btnClose = dialog.findViewById(R.id.close);
+        Button clzbtn1;
+        dg.setContentView(R.layout.about_us_pop_up);
+        dg.show();
+        clzbtn1 = dg.findViewById(R.id.close);
 
-        btnClose.setOnClickListener(new View.OnClickListener() {
+        clzbtn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dialog.dismiss();
+                dg.dismiss();
             }
         });
     }
