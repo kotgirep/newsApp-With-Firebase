@@ -68,16 +68,23 @@
 6. Detailed News Page
 <img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/DetailPage.png" width="250">
 
+7. News Resources List Page
+<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/Resource-List.png" width="250">
 
-7. Sharing News On Twitter
-<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/Twitter.png" width="250">
+8. Selected News Resource page with kenburn's View
+<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/kenburn-view.png" width="250">
 
+9. Detailed View Page for Selected news
+<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/Detail-page.png" width="250">
 
-8. Firebase Authentication
+10. News Shared on Twitter
+<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/DetailPage.png" width="250">
+
+11. Firebase Authentication
 <img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/Firebase.png" width="500">
 
 
-9. Project Architecture Diagram
+12. Project Architecture Diagram
 <img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/CMPE-277Architecture.png" width="500">
 
 ## Refrences
