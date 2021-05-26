@@ -1,4 +1,5 @@
-package com.example.anew;
+package com.example.news;
+
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
