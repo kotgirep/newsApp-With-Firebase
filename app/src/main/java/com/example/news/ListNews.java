@@ -1,4 +1,4 @@
-
+package com.example.news;
 
 import android.app.AlertDialog;
 import android.content.Intent;
