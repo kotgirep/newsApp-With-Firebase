@@ -1,7 +1,7 @@
 # NewsApp-With-Firebase
 ## Student Name: Pranjali Kotgire
 ## University Name: San Jose State University
-## Professor : Kaikai Liu
+## Professor : Dr.Kaikai Liu
 ## ISA : Hari Haran Kura
 ## Demo: https://youtu.be/BQjDQKu_b1s
 
