@@ -13,6 +13,8 @@
 5. Getting news from multiple resources such as CNN news, ABC News,Google News, BBC News etc.
 6. User can share news on multiple platforms such Twitter, Gmail, Facebook etc.
 7. For each news there is detail view where user can view news along with brief information, video and images associated with it.
+8. User can select news resouces from given list and can read news associated with particular news resource.
+9. Hot Recommendation section Where user can see recent news from each news source in kenburn's format.
 
 ## Project Description
 1. For bulletin cluster news app I am using firebase for user authentication, where user can sign up and sign in using firebase.
@@ -29,10 +31,12 @@
 2.	For signup and sign in I am using firebase authentication whereas user’s data will be stored in firebase.
 3.	After sign in user will see a splash screen which shows application name and I have set timeout for splash screen as 5 seconds.
 4.	After 5 seconds you will be redirect to a home page which has news from multiple news resources such as google news, ABC News, CNN News, CNBC news etc. on the same page I have added a search bar where user can type a keyword and search news by keywords.
-5.	all the news on home page, I am fetching from newsapi.org site.
-6.	on home page I am fetching news from all resources in a card view because I wanted to have it in a uniform size container and added Recycler view that provides ability to implement the horizontal, vertical and expandable list. On the same page user can see time when the news has uploaded like 5 minutes ago, 10 minutes ago etc.
+5.	All the news on home page, I am fetching from newsapi.org site.
+6.	On home page I am fetching news from all resources in a card view because I wanted to have it in a uniform size container and added Recycler view that provides ability to implement the horizontal, vertical and expandable list. On the same page user can see time when the news has uploaded like 5 minutes ago, 10 minutes ago etc.
 7.	Once you click on any news from home page you will redirect to its detail view page where you can see a news in details along with images, videos, description associated with it.
 8.	In detail view, under each news you can see a feature where user can share news on multiple platforms such as Twitter, WhatsApp, Gmail, Facebook etc. by simply clicking on platform icon where you want to share the news.
+9.	On Home page user can see a button named News Sources and by clicking that button user will redirect to a news resouces list page where user can select one news resouce and can get to see news associated with that resouce in a card view format and on top latest news will be shown in kenburn's view which is zoom in like feature in android. and after clicking on any news user will be prompted to news detail page where user can see video,images and data associated with that news and from detail view page user can share news on multiple platform such as Twitter,Facebook,Whatsapp, Gmail etc.
+10.	While sharing news on particular platform user has to provide credentials associated with that Platform.
 
 
 
