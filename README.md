@@ -3,7 +3,7 @@
 ## University Name: San Jose State University
 ## Professor : Dr.Kaikai Liu
 ## ISA : Hari Haran Kura
-## Demo: https://youtu.be/BQjDQKu_b1s
+## Demo: https://www.youtube.com/watch?v=CbhbEUWsJok
 
 ## Project Functionalities
 1. Sign Up using firebase
