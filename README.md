@@ -88,7 +88,7 @@
 <img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/Detail-page.png" width="250">
 
 10. News Shared on Twitter
-<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/DetailPage.png" width="250">
+<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/Tweet.png" width="250">
 
 11. Firebase Authentication
 <img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/Firebase.png" width="500">
