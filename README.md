@@ -48,6 +48,11 @@
 5. Cardview
 6. Firebase-core
 7. firebase-auth
+8. circleimageview
+9. picasso
+10. paperdb
+11. kenburnsview
+12. spots-dialog
 
 ## Project Screenshots:
 1. SignIn Page
