@@ -72,7 +72,7 @@
 
 
 5. With Search Functionality by typing a keyword as covid
-<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/Search.png" width="250">
+<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/Searchbarupdatedss.png" width="250">
 
 
 6. Detailed News Page
