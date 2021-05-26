@@ -1,6 +1,4 @@
-
-
-
+package com.example.news;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
