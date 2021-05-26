@@ -47,6 +47,7 @@
 4. Recyclerview
 5. Cardview
 6. Firebase-core
+7. firebase-auth
 
 ## Project Screenshots:
 1. SignIn Page
