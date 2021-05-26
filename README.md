@@ -68,7 +68,7 @@
 
 
 4. Landing Page
-<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/HomePage.png" width="250">
+<img src="https://github.com/kotgirep/newsApp-With-Firebase/blob/main/277Images/Screen%20Shot%202021-05-26%20at%202.05.38%20PM.png" width="250">
 
 
 5. With Search Functionality by typing a keyword as covid
